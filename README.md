@@ -4,9 +4,9 @@
 
 ### By Philip Wood and Matthew Rilett
 
-For thoses who love Christmas...
+For those who love Christmas...
 
-Four Categories to choose from:
+### Four Categories to choose from:
 
 <ol>
     <li>Stars</li>
