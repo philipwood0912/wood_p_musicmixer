@@ -8,29 +8,31 @@
     </head>
     <body>
         <header id="mainHeader">
-            <h1>Festive Funk</h1>
+            <div id="titleBox">
+                <h1>Festive Funk</h1>
+            </div>
         </header>
-        <div id="container">
-            <section id="iconButtons">
-                <div class="iconBox">
-                    <img src="images/iconZero.svg" alt="star">
-                </div>
-                <div class="iconBox">
-                    <img src="images/iconOne.svg" alt="present">
-                </div>
-                <div class="iconBox">
-                    <img src="images/iconTwo.svg" alt="ornament">
-                </div>
-                <div class="iconBox">
-                    <img src="images/iconThree.svg" alt="candy cane">
-                </div>
-            </section>
-            <section id="treeCon">
+        <section id="infoTop">
+            <div class="infoConTop">
+                <p>Choose A Category</p>
+            </div>
+            <div class="infoConTop">
+                <p>Decorate The Tree</p>
+            </div>
+        </section>
+        <section id="container">
+            <div id="iconButtons">
+                <img data-iconref="0" src="images/iconZero.svg" alt="star">
+                <img data-iconref="1" src="images/iconOne.svg" alt="present">
+                <img data-iconref="2" src="images/iconTwo.svg" alt="ornament">
+                <img data-iconref="3" src="images/iconThree.svg" alt="candy cane">
+            </div>
+            <div id="treeCon">
                 <object data="images/christmasTree.svg" type="image/svg+xml"></object>
-            </section>
-            <section id="icons">
-            </section>
-        </div>
+            </div>
+            <div id="iconsCon">
+            </div>
+        </section>
         <script src="js/main.js"></script>
     </body>
 </html>
