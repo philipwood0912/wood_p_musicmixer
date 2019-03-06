@@ -83,7 +83,7 @@ h1 {
 }
 
 #iconButtons {
-    height: 707px;
+    height: 717px;
     width: 185px;
     background-color: #60BFFF;
     border: 3px;
@@ -104,27 +104,72 @@ h1 {
 
 #treeCon {
     width: 400px;
-    height: 650px;
-    padding: 60px 95px 0px 95px;
+    height: 690px;
+    padding: 30px 95px 0px 95px;
     background-color: #0869B2;
+    position: relative;
+}
+
+#treeCon object {
+    width: 67%;
+    position: absolute;
+    padding-top: 40px;
 }
 
 #iconsCon {
-    width: 185px;
-    height: 707px;
+    width: 145px;
+    height: 717px;
     background-color: #60BFFF;
     border: 3px;
     border-top: 0px;
     border-color: #2377FF;
     border-style: inset;
+    padding: 0px 20px 0px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .iconsImages {
-    width: 100px;
-    height: 100px;
+    width: 50%;
     margin: 0 auto;
-    padding: 38.5px 0px;
+}
+
+.dropZones {
+    width: 400px;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dropBox {
+    width: 90px;
+    height: 90px;
+    border: thin dashed white;
+    position: relative;
+}
+
+.two {
+    margin: 0px 10px;
+}
+
+.three {
+    margin: 0px 20px;
+}
+
+.four {
+    margin: 0px 20px;
+}
+
+.five {
+    margin: 0px 20px;
+}
+
+.dropBox img {
+	width: auto !important;
+	padding: 0 !important;
+	cursor: default;
+	position: absolute;
 }
 
