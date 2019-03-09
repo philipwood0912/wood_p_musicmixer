@@ -19,7 +19,16 @@ Pick a category and decorate the tree!
 
 Each category has four options and will feature a specific set of sounds.
 
+Drag an image onto the tree to hear the sounds.
+
+Click an image to remove off of tree.
+
+More updates soon to come!
+- Pause and Play feature
+- Drop area update
+
 ### Stars
+#### Sounds - High Hats
 
 <ol>
     <li>Gold Star</li>
@@ -29,6 +38,7 @@ Each category has four options and will feature a specific set of sounds.
 </ol>
 
 ### Presents
+#### Sounds - Drum / Kick
 
 <ol>
     <li>White Present</li>
@@ -38,6 +48,7 @@ Each category has four options and will feature a specific set of sounds.
 </ol>
 
 ### Ornaments
+#### Christmas Jingle
 
 <ol>
     <li>Star Ornament</li>
@@ -47,6 +58,7 @@ Each category has four options and will feature a specific set of sounds.
 </ol>
 
 ### Candy Canes
+#### Misc
 
 <ol>
     <li>Red and Green Candy Cane</li>
@@ -55,7 +67,7 @@ Each category has four options and will feature a specific set of sounds.
     <li>Yellow and Blue Candy Cane</li>
 </ol>
 
-Music updates soon to come!
+
 
 
 
