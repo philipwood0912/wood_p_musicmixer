@@ -5,15 +5,16 @@
     let iconsBox = document.querySelector('#iconsCon'),
         treeBox = document.querySelector('#treeCon'),
         iconSelectors = document.querySelectorAll('#iconButtons img'),
-        dropBoxes = document.querySelectorAll('.dropBox');
+        dropBoxes = document.querySelectorAll('.dropBox'),
+        audios = document.querySelectorAll('audio');
     
     function createIcons(pictureIndex) {
         
         icons.forEach((icon, index) => {
-            let newIcons = `<img draggable id="${icon + pictureIndex}" class="iconsImages" data-iconref="${pictureIndex}" src="images/${icon + pictureIndex}.svg" alt="icon thumbnail">`
+            let newIcons = `<img draggable id="${icon + pictureIndex}" class="iconsImages" data-iconref="${pictureIndex}" data-musicref="${icon + pictureIndex}" src="images/${icon + pictureIndex}.svg" alt="icon thumbnail">`
             
             iconsBox.innerHTML += newIcons;
-            iconsBox.dataset.iconref = `${pictureIndex}`
+            iconsBox.dataset.iconref = `${pictureIndex}`;
         });
         
         initDrag();
@@ -31,6 +32,12 @@
 		});
 	}
     
+    function resetAudio() {
+        audios.forEach(audio => {
+            audio.currentTime = 0;
+        });
+    }
+    
     dropBoxes.forEach(box => {
         
         box.addEventListener("dragover", function(e) {
@@ -42,6 +49,7 @@
             e.preventDefault();
             console.log('you dropped it on me');
             
+            
             let icon = e.dataTransfer.getData("text/plain");
             
             if (box.childNodes.length < 1) {
@@ -49,6 +57,15 @@
             } else {
                 return false;
             }
+            
+            resetAudio();
+            
+            audios.forEach(audio => {
+                if (audio.dataset.musicref == document.querySelector(`#${icon}`).dataset.musicref) {
+                    audio.play();
+                }
+                
+            });
         });
         
         box.addEventListener("click", function(e) {
@@ -56,6 +73,12 @@
             
             let image = e.target;
             box.removeChild(image);
+            
+            audios.forEach(audio => {
+                if (audio.dataset.musicref == image.dataset.musicref) {
+                    audio.pause();
+                }
+            });
             
             if (image.dataset.iconref == iconsBox.dataset.iconref) {
                 iconsBox.appendChild(image);
