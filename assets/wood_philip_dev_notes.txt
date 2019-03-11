@@ -1,0 +1,38 @@
+Dev Notes - Philip Wood
+
+Drag and Drop Functionality
+
+A) Setting up drop zones / drop boxes
+	1. Add divs to html
+	2. Style and center using CSS
+B) Drag Functionality
+	1. Make generated images draggable
+	2. Add function to initalize drag
+C) Drag and drop functionality on drop boxes
+	1. Add event for when image is dragged over div, log to console
+	2. Add event for when image is dropped
+		i) Add rule if div children is < 1 append the image, else return false, log to console
+	3. Add event for when div is clicked
+		i) If clicked remove child from div and append to icons box
+		(created bugs had to take different approach with datasets for removing)
+		ii) Add datasets to created images matching selector data
+		iii) Add dataset to div matching selector data
+		iv) On click if the image data matches div data, append to div
+D) Audio Functionality
+	1. Add audio files to html
+	2. Set up dataset on audio files
+	3. Add dataset matching audio files to created images
+	4. Set up function to reset audio
+	5. Add reset to drop event on drop boxes
+	6. On drop event for drop boxes, play audio according to matching datasets
+	7. On drop box click event, add audio pause
+
+More to do?
+Setting up pause / play feature for audio
+Making drop boxes a bigger drop area for images
+
+Bugs
+Problem with audio loop, sounds delayed
+Design issue with SVGs, some scale too big
+		
+
