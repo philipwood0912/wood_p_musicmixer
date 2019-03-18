@@ -8,8 +8,7 @@
         dropBoxes = document.querySelectorAll('.dropBox'),
         audios = document.querySelectorAll('audio'),
         play = document.querySelector('#play'),
-        pause = document.querySelector('#pause'),
-        list = [];
+        pause = document.querySelector('#pause');
     
     function createIcons(pictureIndex) {
         
@@ -116,8 +115,6 @@
     iconSelectors.forEach(iconImage => iconImage.addEventListener('click', resetIcons));
     
     createIcons(0);
-    
-    debugger;
     
     
 })();
