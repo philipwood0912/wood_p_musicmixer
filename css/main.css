@@ -7,6 +7,10 @@ body {
     background-repeat: no-repeat;
 }
 
+p {
+    color: #fff;
+}
+
 @font-face {
     font-family: 'chelaone-regular';
     src: url('../fonts/chelaone-regular-webfont.woff'),
@@ -147,24 +151,41 @@ h1 {
 .dropBox {
     width: 400px;
     height: 115px;
-    border: thin dashed white;
     position: relative;
 }
 
 .one img {
-    width: 25%;
-    left: 150px;
+    width: 17%;
+    left: 162px;
 }
 
-.two img {
-    left: 70px;
+.twoA img {
+    left: 120px;
 }
 
+.twoB img {
+    right: 120px;
+}
 
+.threeA img {
+    left: 100px;
+}
 
+.threeB img {
+    right: 100px;
+}
 
+.twoA img, .twoB img, .threeA img, .threeB img {
+    width: 35%;
+}
+
+.four img {
+    left: 33px;
+    bottom: 30px;
+}
 
 .dropBox img {
+    height: auto;
 	padding: 0 !important;
 	cursor: default;
 	position: absolute;
@@ -175,9 +196,21 @@ h1 {
     height: 75px;
     position: absolute;
     top: 30px;
+    border: 5px solid #0869B2;
+    border-radius: 50px;
+}
+
+.button:hover {
+    border: 5px solid #fff;
+}
+
+.button:active {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
 }
 
 .pause {
-    margin-left: 325px;
+    margin-left: 320px;
 }
 
