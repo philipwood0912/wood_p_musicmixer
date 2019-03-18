@@ -85,7 +85,9 @@
             });
             
             if (image.dataset.iconref == iconsBox.dataset.iconref) {
-                iconsBox.appendChild(image);
+                if (iconsBox.length < 4) {
+                    iconsBox.appendChild(image);
+                }
             }
         });
         
