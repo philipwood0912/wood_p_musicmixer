@@ -2,6 +2,11 @@
     display: none;
 }
 
+body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+}
+
 @font-face {
     font-family: 'chelaone-regular';
     src: url('../fonts/chelaone-regular-webfont.woff'),
@@ -47,7 +52,7 @@ h1 {
 #container {
     margin: 0 auto;
     width: 970px;
-    height: 800px;
+    height: 760px;
     display: flex;
     flex-direction: row;
 }
@@ -56,7 +61,7 @@ h1 {
     height: 70px;
     width: 970px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -69,11 +74,7 @@ h1 {
     border-bottom: 0px;
     border-style: inset;
     border-color: #2377FF;
-    background: #2398ff;
-    background: -moz-linear-gradient(top, #2398ff 0%, #60bfff 100%);
-    background: -webkit-linear-gradient(top, #2398ff 0%,#60bfff 100%);
-    background: linear-gradient(to bottom, #2398ff 0%,#60bfff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2398ff', endColorstr='#60bfff',GradientType=0 );
+    background-color: #60BFFF;
 }
 
 .infoConTop p {
@@ -119,11 +120,11 @@ h1 {
 #iconsCon {
     width: 145px;
     height: 717px;
-    background-color: #60BFFF;
     border: 3px;
     border-top: 0px;
-    border-color: #2377FF;
     border-style: inset;
+    border-color: #2377FF;
+    background-color: #60BFFF;
     padding: 0px 20px 0px 20px;
     display: flex;
     flex-direction: column;
@@ -144,32 +145,39 @@ h1 {
 }
 
 .dropBox {
-    width: 90px;
-    height: 90px;
+    width: 400px;
+    height: 115px;
     border: thin dashed white;
     position: relative;
 }
 
-.two {
-    margin: 0px 10px;
+.one img {
+    width: 25%;
+    left: 150px;
 }
 
-.three {
-    margin: 0px 20px;
+.two img {
+    left: 70px;
 }
 
-.four {
-    margin: 0px 20px;
-}
 
-.five {
-    margin: 0px 20px;
-}
+
+
 
 .dropBox img {
-	width: auto !important;
 	padding: 0 !important;
 	cursor: default;
 	position: absolute;
+}
+
+.button {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 30px;
+}
+
+.pause {
+    margin-left: 325px;
 }
 

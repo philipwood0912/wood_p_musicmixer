@@ -6,7 +6,10 @@
         treeBox = document.querySelector('#treeCon'),
         iconSelectors = document.querySelectorAll('#iconButtons img'),
         dropBoxes = document.querySelectorAll('.dropBox'),
-        audios = document.querySelectorAll('audio');
+        audios = document.querySelectorAll('audio'),
+        play = document.querySelector('#play'),
+        pause = document.querySelector('#pause'),
+        list = [];
     
     function createIcons(pictureIndex) {
         
@@ -62,10 +65,11 @@
             
             audios.forEach(audio => {
                 if (audio.dataset.musicref == document.querySelector(`#${icon}`).dataset.musicref) {
+                    audio.muted = false;
                     audio.play();
-                }
-                
+                }   
             });
+            
         });
         
         box.addEventListener("click", function(e) {
@@ -76,7 +80,7 @@
             
             audios.forEach(audio => {
                 if (audio.dataset.musicref == image.dataset.musicref) {
-                    audio.pause();
+                    audio.muted = true;
                 }
             });
             
@@ -85,6 +89,20 @@
             }
         });
         
+    });
+    
+    play.addEventListener("click", function(e) {
+        console.log('click');
+        audios.forEach(audio => {
+            audio.play();
+        });
+    });
+    
+    pause.addEventListener("click", function(e) {
+        console.log('click');
+        audios.forEach(audio => {
+            audio.pause();    
+        });
     });
     
     
@@ -97,8 +115,7 @@
     
     createIcons(0);
     
-    
-    
+    debugger;
     
     
 })();
