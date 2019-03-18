@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 337">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #73bae7;
+      }
+
+      .cls-2 {
+        fill: #066bb2;
+      }
+    </style>
+  </defs>
+  <title>pauseButton</title>
+  <circle class="cls-1" cx="168.5" cy="168.5" r="168.5"/>
+  <rect class="cls-2" x="81.64" y="69.89" width="51.83" height="195.74" rx="12"/>
+  <rect class="cls-2" x="203.24" y="69.89" width="51.83" height="195.74" rx="12"/>
+</svg>
