@@ -60,6 +60,8 @@
                 return false;
             }
             
+            this.firstChild.classList.add('animateIcon');
+            
             resetAudio();
             
             audios.forEach(audio => {
@@ -76,6 +78,7 @@
             
             let image = e.target;
             box.removeChild(image);
+            image.classList.remove('animateIcon');
             
             audios.forEach(audio => {
                 if (audio.dataset.musicref == image.dataset.musicref) {
