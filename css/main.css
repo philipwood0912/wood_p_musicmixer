@@ -30,11 +30,9 @@ h1 {
 #mainHeader {
     width: 965px;
     height: 195px;
-    background: #2398ff;
-    background: -moz-linear-gradient(top, #2398ff 0%, #60bfff 100%);
-    background: -webkit-linear-gradient(top, #2398ff 0%,#60bfff 100%);
-    background: linear-gradient(to bottom, #2398ff 0%,#60bfff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2398ff', endColorstr='#60bfff',GradientType=0 );
+    background-color: rgba(26, 153, 248, 0.8);
+    background: rgba(26, 153, 248, 0.8);
+    color: rgba(26, 153, 248, 0.8);
     text-align: center;
     position: relative;
     margin: 0 auto;
@@ -46,7 +44,9 @@ h1 {
 #titleBox {
     width: 700px;
     height: 150px;
-    background-color: #0869B2;
+    background-color: rgba(26, 121, 196, 0.8);
+    background: rgba(26, 121, 196, 0.8);
+    color: rgba(26, 121, 196, 0.8);
     position: absolute;
     margin-left: 135px;
     margin-top: 22px;
@@ -82,6 +82,18 @@ h1 {
     background-color: #60BFFF;
 }
 
+.dec {
+    background-color: rgba(26, 121, 196, 0.8);
+    background: rgba(26, 121, 196, 0.8);
+    color: rgba(26, 121, 196, 0.8);
+}
+
+.cat {
+    background-color: rgba(26, 153, 248, 0.8);
+    background: rgba(26, 153, 248, 0.8);
+    color: rgba(26, 153, 248, 0.8);
+}
+
 .infoConTop p {
     font-size: 30px;
     margin-top: 15px;
@@ -91,7 +103,9 @@ h1 {
 #iconButtons {
     height: 717px;
     width: 185px;
-    background-color: #60BFFF;
+    background-color: rgba(26, 153, 248, 0.8);
+    background: rgba(26, 153, 248, 0.8);
+    color: rgba(26, 153, 248, 0.8);
     border: 3px;
     border-top: 0px;
     border-color: #2377FF;
@@ -110,10 +124,11 @@ h1 {
 
 #treeCon {
     width: 400px;
-    height: 690px;
+    height: 684px;
     padding: 30px 95px 0px 95px;
-    background-color: #0869B2;
+    background-color: #89D5FF;
     position: relative;
+    border: 3px solid #2377FF;
 }
 
 #treeCon object {
@@ -129,7 +144,9 @@ h1 {
     border-top: 0px;
     border-style: inset;
     border-color: #2377FF;
-    background-color: #60BFFF;
+    background-color: rgba(26, 121, 196, 0.8);
+    background: rgba(26, 121, 196, 0.8);
+    color: rgba(26, 121, 196, 0.8);
     padding: 0px 20px 0px 20px;
     display: flex;
     flex-direction: column;
