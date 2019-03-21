@@ -23,9 +23,11 @@ Drag an image onto the tree to hear the sounds.
 
 Click an image to remove off of tree.
 
-More updates soon to come!
-- Pause and Play feature
-- Drop area update
+### Play and Pause features are now here!!
+
+Pause and Play a current track with our handy new buttons!
+
+Get into the holiday spirit.. Any day of the week!
 
 ### Stars
 #### Sounds - High Hats
@@ -48,7 +50,7 @@ More updates soon to come!
 </ol>
 
 ### Ornaments
-#### Christmas Jingle
+#### Sounds - Christmas Jingle
 
 <ol>
     <li>Star Ornament</li>
@@ -58,7 +60,7 @@ More updates soon to come!
 </ol>
 
 ### Candy Canes
-#### Misc
+#### Sounds - Misc
 
 <ol>
     <li>Red and Green Candy Cane</li>

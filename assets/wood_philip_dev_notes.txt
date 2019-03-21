@@ -28,11 +28,34 @@ D) Audio Functionality
 	7. On drop box click event, add audio pause
 
 More to do?
-Setting up pause / play feature for audio
-Making drop boxes a bigger drop area for images
+Setting up pause / play feature for audio - Done
+Making drop boxes a bigger drop area for images - Done
+Design issues - Fixed, according to recommendations
+Icon Animation - Done
 
 Bugs
-Problem with audio loop, sounds delayed
-Design issue with SVGs, some scale too big
+Problem with audio loop, sounds delayed - Problem with actual audio
+Design issue with SVGs, some scale too big - Fixed
+
+E) Play and Pause Feature
+	1. Create SVGS for buttons
+	2. Add buttons to layout
+	3. Add muted feature to audio on app (needed to prevent all audio from playing on drop, theres probably a better way going about this)
+	4. On box drop, unmute the correlating audio
+	5. When pause is "clicked", pause current audio
+	6. When play is "clicked", play current audio
+	7. When box is "clicked" and icon is removed from tree, remute audio
+
+F) Drop Box Area
+	1. CSS issue, solved by increasing area size, and fixing location of dropped item.
+
+G) Design Issues, App / Icons
+	1. CSS issue, changed colors on elements, added bg image, lowered opacity of some elements, changed size on icons.
+
+H) Icon Animation
+	1. Write CSS class for animation
+	2. On box drop, add class to icon to start animation
+	3. When box is "clicked" and icon is removed from tree, remove class
+
 		
 
